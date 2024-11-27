@@ -28,6 +28,7 @@ public class CloudVendorServiceImpl implements CloudVendorService {
     @Override
     public String deleteCloudVendor(String cloudVendorId) {
         cloudVendorRepo.deleteById(cloudVendorId);
+        System.out.println(cloudVendorId);
         return "delete sucess";
     }
 
